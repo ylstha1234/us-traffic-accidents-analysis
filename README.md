@@ -6,7 +6,9 @@ This project analyzes U.S. traffic accident data to identify key factors that co
 
 ## Dataset
 
-1. Source: U.S. Accidents Dataset  
+The raw and cleaned datasets are not included due to GitHb file size limits. The analysis notebook documents contain all data cleaning steps.
+
+1. Source: U.S. Accidents Dataset (https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents)
 2. Size: ~7.7 million accident records  
 3. Key Attributes:  
   - Location (State, City, Latitude, Longitude)  
@@ -25,7 +27,7 @@ This project analyzes U.S. traffic accident data to identify key factors that co
 ## Data Preparation
 
 1. Removed missing and invalid records
-2. Converted time fields to extract hour and weekday
+2. Converted time fields to extract hour, month and year
 3. Addressed skewed numerical variables using transformations and selective IQR capping
 4. Excluded severity from inappropriate transformations
 5. Saved a cleaned dataset for visualization in Tableau
